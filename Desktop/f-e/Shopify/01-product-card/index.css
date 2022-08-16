@@ -1,0 +1,168 @@
+/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.catalog {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.catalog__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 72px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.catalog__container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.catalog__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+ 
+  margin: 0 auto;
+  width: 380px;
+  height: 482px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(243, 243, 243, 1);
+  box-shadow: -1px 2px 13px 1px #e5e5e5;
+  transition: all .3s;
+}
+
+.catalog__card:hover {
+  transform: scale(1.03);
+}
+
+.catalog__bckg {
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 24px;
+}
+
+.catalog__mark {
+  position: absolute;
+  top: 3%;
+  left: 4%;
+  text-align: center;
+  width: 110px;
+  height: 24px;
+  box-sizing: border-box;
+  border-radius: 8px;
+
+  background-color: #fdcff3;
+  color: #2f2f2f;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.orange {
+  position: absolute;
+  width: 134px;
+  top: 3%;
+  left: 37%;
+
+  background-color: #ffcf56;
+}
+
+.catalog__subtitle {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 36px;
+
+  margin: 0;
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+.card__description {
+  display: flex;
+  text-align: start;
+
+  color: #2f2f2f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  margin-bottom: 72px;
+  margin: 0 24px;
+}
+
+.space {
+  margin-bottom: 24px;
+}
+
+.catalog__button {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 332px;
+  height: 48px;
+  border: 2px solid #42940f;
+  background-color: #fff;
+  border-radius: 12px;
+
+  margin: 0 24px;
+  color: #42940f;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  transition: all .3s;
+}
+
+.catalog__button:hover {
+  background-color: #42940f;
+  color: #fff;
+}
+
+.catalog__button:active {
+  background-color: #1f5200;
+}
+
+
+.disabled {
+  color: #fff;
+  background-color: #4e4e4e;
+  border: none;
+  transition: all .3s;
+}
+
+.disabled:hover {
+  background-color: #4e4e4e;
+}
+
+@media (max-width: 768px) {
+ .catalog {
+  max-width: 720px;
+ }
+
+ .catalog__container {
+  gap: 10px;
+ }
+}
