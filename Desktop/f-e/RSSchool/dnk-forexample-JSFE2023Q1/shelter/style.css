@@ -1,0 +1,112 @@
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+  flex-direction: column;
+}
+.header__link {
+  font-size: 15px;
+  line-height: 160%;
+  color: #CDCDCD;
+}
+.header__navigation-list {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+.header .georgia-fonts {
+  font-weight: 400;
+  color: #f1cdb3;
+  font-size: 32px;
+  line-height: 110%;
+  margin-bottom: 10px;
+}
+.header .arial-fonts {
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.georgia-fonts {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.arial-fonts {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: #F1CDB3;
+  border-radius: 100px;
+  color: #292929;
+}
+
+.not-only {
+  margin-top: -120px;
+  background-image: url("/shelter/src/assets/start-screen-gradient-background.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  background-size: 100%;
+}
+.not-only__content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 350px;
+}
+.not-only__title {
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  width: 45%;
+}
+.not-only__paragraph {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #cdcdcd;
+  width: 63%;
+}
+.not-only__img {
+  background-image: url("/shelter/src/assets/start-screen-puppy.png");
+  width: 698px;
+  height: 728px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,43 @@
+.header {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__wrapper {
+  }
+  &__bcg {
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+  }
+  & .container {
+  }
+  &__link {
+    font-size: 15px;
+    line-height: 160%;
+    color: #CDCDCD;
+  }
+  &__navigation {
+    &-list {
+      display: flex;
+      flex-direction: row;
+      gap: 35px;
+    }
+  }
+  & .georgia-fonts {
+    font-weight: 400;
+    color: #f1cdb3;
+    font-size: 32px;
+    line-height: 110%;
+    margin-bottom: 10px;
+  }
+  & .arial-fonts {
+    font-style: normal;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
