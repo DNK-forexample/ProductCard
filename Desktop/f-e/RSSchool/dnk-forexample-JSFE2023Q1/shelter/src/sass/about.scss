@@ -1,6 +1,6 @@
 .about {
-  margin-bottom: 100px;
-  margin-top: -120px;
+  margin-bottom: 90px;
+  margin-top: -135px;
   &__content {
     display: flex;
     flex-direction: row;
@@ -9,7 +9,7 @@ gap: 120px;
 
   }
   &__img {
-    //background-image: url('/shelter/src/assets/about-pets.png');
+    margin-top: -18px;
     width: 300px;
     height: 408px;
   }
@@ -29,16 +29,17 @@ font-weight: 400;
 font-size: 35px;
 line-height: 130%;
 width: 75%;
-margin-bottom: 25px;
+margin-bottom: 21px;
 letter-spacing: 0.06em;
   }
   &__paragraph {
+ 
     display: flex;
     font-family: 'Arial';
 font-style: normal;
 font-weight: 400;
 font-size: 15px;
-line-height: 160%;
+line-height: 125%;
 color: #4C4C4C;
 width: 100%;
 margin-bottom: 25px;

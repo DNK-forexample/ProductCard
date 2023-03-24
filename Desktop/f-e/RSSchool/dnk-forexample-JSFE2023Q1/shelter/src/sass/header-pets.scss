@@ -4,11 +4,6 @@
     justify-content: space-between;
     flex-direction: row;
   }
-
-  &__wrapper {
-  }
-  &__bcg {
-  }
   &__logo {
     display: flex;
     flex-direction: column;
@@ -17,8 +12,32 @@
     &:hover {
       transform: scale(1.2);
     }
+ 
     &-name {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+  
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 110%;
+    
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.06em;
+      
       color: #545454;
+    }
+    &-sub {
+      font-family: Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+
+display: flex;
+align-items: center;
+letter-spacing: 0.1em;
+color: #292929;
     }
   }
   & .container {
@@ -26,7 +45,7 @@
   &__link {
     font-size: 15px;
     line-height: 160%;
-    color: #CDCDCD;
+    color: #545454;
     cursor: pointer;
     padding-bottom: 3px;
    
@@ -38,7 +57,7 @@
       gap: 35px;
       &-item {
         transition: all .4s;
-        &:nth-of-type(2):hover,
+        &:nth-of-type(1):hover,
         &:nth-of-type(3):hover,
         &:nth-of-type(4):hover {
           transform: scale(1.2);

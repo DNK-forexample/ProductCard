@@ -17,6 +17,7 @@
   &__text {
     display: flex;
     flex-direction: column;
+    margin-top: 125px;
   }
   &__title {
     color: #fff;
@@ -26,16 +27,17 @@
     font-size: 44px;
     line-height: 130%;
     width: 80%;
-  
+  margin-bottom: 26px;
   }
   &__paragraph {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
-    line-height: 160%;
+    line-height: 130%;
     color: #cdcdcd;
-    width: 63%;
+    width: 94%;
+    margin-bottom: 40px;
   }
   &__button {
     width: 207px;
@@ -51,6 +53,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    letter-spacing: 0.12em;
     &-link {
       color: #292929;
     }

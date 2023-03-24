@@ -1,12 +1,21 @@
-.our-friends {
-  padding-top: 21px;
+.friends {
   background-color: #F6F6F6;
-  padding-bottom: 70px;
-  margin-bottom: 77px;
+  padding-bottom: 100px;
+  
+  &__pet {
+
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    grid-column-gap: 2%;
+    grid-row-gap: 6%;
+    margin-bottom: 80px;
+  }
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: center;
     align-items: center;
   }
 &__title {
@@ -24,23 +33,13 @@ margin-bottom: 60px;
 }
 &__slider {
   display: flex;
-  transform: translateX(-25px);
   
 }
-&__cards {
-  align-self: center;
-  display: grid;
-  grid-template-columns: repeat(3, 27%);
-  gap: 90px;
-  margin-bottom: 60px;
-
-}
 &__prev {
- background: url('/shelter/src/assets/button_arrow_prev.svg');
+ background: url('/shelter/src/assets/button_paginator-prev.svg');
  width: 52px;
  height: 52px;
- margin-top: 193px;
- margin-right: 73px;
+
  cursor: pointer;
  transition: all .5s;
  &:hover {
@@ -51,11 +50,10 @@ margin-bottom: 60px;
  }
 }
 &__next {
-  background: url('/shelter/src/assets/button_arrow_next.svg');
+  background: url('/shelter/src/assets/button_paginator-next.svg');
  width: 52px;
  height: 52px;
- margin-top: 193px;
-margin-left: 20px;
+
 cursor: pointer;
 transition: all .5s;
  &:hover {
@@ -88,8 +86,8 @@ font-size: 17px;
 line-height: 130%;
 letter-spacing: 0.06em;
 color: #292929;
-width: 187px;
-height: 52px;
+width: 180px;
+height: 42px;
 border-radius: 100px;
 background-color: #FAFAFA;
 border: 2px solid #eec7aa;
@@ -101,7 +99,7 @@ transition: all .7s;
  }
 &-rest {
   cursor: pointer;
-  width: 261px;
+  width: 52px;
   height: 52px;
   border: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -121,18 +119,16 @@ transition: all .5s;
  }
 }
 }
-&__name {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 23px;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-color: #545454;
-margin-top: 28px;
-margin-bottom: 30px;
+&__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+&__button-paginator {
+  &-early {
+    width: 52px;
+    height: 52px;
+  }
 }
 }

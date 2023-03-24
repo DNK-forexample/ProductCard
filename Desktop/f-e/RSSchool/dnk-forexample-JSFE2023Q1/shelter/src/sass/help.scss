@@ -1,9 +1,22 @@
 .help {
-  padding-bottom: 100px;
+
+ p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #545454;
+ }
+  padding-bottom: 80px;
   & .container {
-    padding: 0 127px;
+    padding: 0 50px;
   }
-  &__content {}
   &__title {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
@@ -22,98 +35,25 @@
     width: 60px;
     height: 60px;
   }
-  /*&__ways {
-    display: grid;
-    grid-template-columns: repeat(5, 2fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin-bottom: 100px;
-    column-gap: 125px;
-    //grid-template-columns: repeat(5, 1fr);
-    //grid-template-rows: repeat(2, 100px);
-    /*grid-template-columns: repeat(5, 2fr);
-    grid-template-rows: repeat(2, 100px);
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;*/
-    /*display: grid;
-      height: 220px;
-      display: grid;
-      grid-gap: 10px;
-     grid: auto  / repeat(5, 1fr);
-   
-  }
-  &__way {
-    &-1 {
-      align-self: flex-start;
-      justify-self: flex-start;
-    }
-    &-2 {
-      align-self: center;
-      justify-self: center;
-    }
-    &-3 {
-      align-self: center;
-      justify-self: center;
-    }
-    &-4 {
-      align-self: center;
-      justify-self: flex-end;
-    }
-    &-5 {
-      align-self: center;
-      justify-self: flex-end;
-    }
-    &-6 {
-     
-      align-self: center;
-      justify-self: flex-end;
-    }
-    &-7 {
-      align-self: center;
-      justify-self: flex-end;
-    }
-    &-8 {
-      align-self: center;
-      justify-self: flex-end;
-    }
-    &-9 {
-      align-self: center;
-      justify-self: flex-end;
-    }
-
-  }*/
+  
   &__ways {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-  row-gap: 55px;
-   
-  }
-  &__way-1 {
-    margin-right: 120px;
-  }
-  &__way-2 {
-    margin-right: 127px;
-  }
-  &__way-3 {
-    margin-right: 127px;
-  }
-  &__way-4 {
-    margin-right: 120px;
+    max-width: 1100px;
+    width: 100%;
+    column-gap: 117px;
+row-gap: 38px;
+margin: 0 auto;
   }
 
-  &__way-6 {
-    margin-left: 130px;
+  &__way {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    row-gap: 6px;
   }
 
-  &__way-7 {
-    margin-left: 20px;
-  }
-  &__way-8 {
-    margin-right: -10px;
-  }
-  &__way-9 {
-    margin-right: 80px;
-  }
+ }
  
-}
