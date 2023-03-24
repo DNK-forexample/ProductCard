@@ -26,5 +26,10 @@ plugins: [
     filename: "index.html",
     template: "src/index.html"
   })
+  /*new htmlWebpackPlugin({
+    title: "Pets",
+    filename: "pets.html",
+    template: "src/pets.html"
+  })*/
 ]
 }

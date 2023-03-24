@@ -1,0 +1,67 @@
+.header-pets {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__wrapper {
+  }
+  &__bcg {
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all .5s;
+    &:hover {
+      transform: scale(1.2);
+    }
+    &-name {
+      color: #545454;
+    }
+  }
+  & .container {
+  }
+  &__link {
+    font-size: 15px;
+    line-height: 160%;
+    color: #CDCDCD;
+    cursor: pointer;
+    padding-bottom: 3px;
+   
+  }
+  &__navigation {
+    &-list {
+      display: flex;
+      flex-direction: row;
+      gap: 35px;
+      &-item {
+        transition: all .4s;
+        &:nth-of-type(2):hover,
+        &:nth-of-type(3):hover,
+        &:nth-of-type(4):hover {
+          transform: scale(1.2);
+          border-bottom: 3px solid #F1CDB3;
+        
+        }
+      }
+    }
+
+  }
+  & .georgia-fonts {
+    font-weight: 400;
+    color: #f1cdb3;
+    font-size: 32px;
+    line-height: 110%;
+    margin-bottom: 10px;
+  }
+  & .arial-fonts {
+    font-style: normal;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  
+}
