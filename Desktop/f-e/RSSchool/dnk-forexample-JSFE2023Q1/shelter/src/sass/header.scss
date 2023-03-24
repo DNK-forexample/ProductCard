@@ -12,6 +12,10 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
+    transition: all .5s;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   & .container {
   }
@@ -20,13 +24,26 @@
     line-height: 160%;
     color: #CDCDCD;
     cursor: pointer;
+    padding-bottom: 3px;
+   
   }
   &__navigation {
     &-list {
       display: flex;
       flex-direction: row;
       gap: 35px;
+      &-item {
+        transition: all .4s;
+        &:nth-of-type(2):hover,
+        &:nth-of-type(3):hover,
+        &:nth-of-type(4):hover {
+          transform: scale(1.2);
+          border-bottom: 3px solid #F1CDB3;
+        
+        }
+      }
     }
+
   }
   & .georgia-fonts {
     font-weight: 400;
@@ -42,4 +59,5 @@
     font-size: 13px;
     line-height: 15px;
   }
+  
 }

@@ -1,0 +1,92 @@
+.footer {
+  background-image: url('/shelter/src/assets/footer-gradient-background.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  background-size: 100%;
+  height: fit-content;
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    &-title {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 130%;
+letter-spacing: 0.06em;
+
+color: #FFF;
+    }
+    &-mail {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      cursor: pointer;
+      margin-bottom: 43px;
+      &-icon {
+        width: 40px;
+        height: 26px;
+      }
+      &-email {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 115%;
+letter-spacing: 0.06em;
+
+color: #F1CDB3;
+
+      }
+    }
+    &-phone {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      cursor: pointer;
+      margin-bottom: 43px;
+      &-icon {
+        width: 40px;
+        height: 32px;
+      }
+      &-number {
+        width: 179px;
+        height: 23px;
+      }
+    }
+  }
+
+  &__img {
+    width: 300px;
+    height: 310px;
+  }
+  &__adresses {
+    &-first {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      cursor: pointer;
+      margin-bottom: 37px;
+      margin-top: -10px;
+    }
+    &-second {
+      margin-top: -10px;
+    }
+  }
+  &__link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+  }
+  
+}
