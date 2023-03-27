@@ -16,7 +16,7 @@ performance: {
       },
       {
         test: /\.(png|jpg|jpeg|svg|gif)$/i,
-        type: "assets/resource"
+        type: "asset/resource"
       }
     ]
 },
@@ -25,11 +25,11 @@ plugins: [
     title: "Shelter",
     filename: "index.html",
     template: "src/index.html"
-  })
-  /*new htmlWebpackPlugin({
+  }),
+  new htmlWebpackPlugin({
     title: "Pets",
     filename: "pets.html",
     template: "src/pets.html"
-  })*/
+  })
 ]
 }

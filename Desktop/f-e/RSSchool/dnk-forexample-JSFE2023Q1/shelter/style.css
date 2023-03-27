@@ -1,3 +1,13 @@
+.header {
+  padding-top: 30px;
+  width: 100%;
+  object-position: center;
+  object-fit: fill;
+  background-size: 100%;
+  background-image: url("/shelter/src/assets/start-screen-gradient-background.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
 .header__content {
   display: flex;
   justify-content: space-between;
@@ -47,7 +57,7 @@
 
 .container {
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 0 40px;
   max-width: 1198px;
 }
 
@@ -55,9 +65,13 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
+  scroll-behavior: smooth;
+  height: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -105,16 +119,12 @@ button {
   letter-spacing: 0.1em;
 }
 
-.wrapper {
-  position: relative;
-}
-
 .not-only {
-  margin-top: -120px;
   margin-bottom: 200px;
-  background-image: url("/shelter/src/assets/start-screen-gradient-background.jpg");
+  background-image: url("../assets/start-screen-gradient-background.jpg");
   background-repeat: no-repeat;
   width: 100%;
+  height: 100%;
   object-position: center;
   object-fit: cover;
   background-size: 100%;
@@ -122,7 +132,7 @@ button {
 .not-only__content {
   display: flex;
   flex-direction: row;
-  margin-top: 150px;
+  margin-top: 90px;
   justify-content: space-between;
 }
 .not-only__text {
@@ -138,17 +148,17 @@ button {
   font-size: 44px;
   line-height: 130%;
   width: 80%;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 .not-only__paragraph {
   font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 130%;
+  line-height: 150%;
   color: #cdcdcd;
   width: 94%;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 .not-only__button {
   width: 207px;
@@ -174,15 +184,15 @@ button {
   color: #F1CDB3;
 }
 .not-only__img {
-  width: 698px;
-  height: 728px;
+  width: 70%;
+  height: 70%;
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 .about {
   margin-bottom: 90px;
-  margin-top: -135px;
+  margin-top: -105px;
 }
 .about__content {
   display: flex;
@@ -211,7 +221,7 @@ button {
   font-size: 35px;
   line-height: 130%;
   width: 75%;
-  margin-bottom: 21px;
+  margin-bottom: 25px;
   letter-spacing: 0.06em;
 }
 .about__paragraph {
@@ -220,14 +230,14 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
-  line-height: 125%;
+  line-height: 160%;
   color: #4C4C4C;
   width: 100%;
   margin-bottom: 25px;
 }
 
 .our-friends {
-  padding-top: 21px;
+  padding-top: 51px;
   background-color: #F6F6F6;
   padding-bottom: 70px;
   margin-bottom: 77px;
@@ -262,7 +272,7 @@ button {
   margin-bottom: 60px;
 }
 .our-friends__prev {
-  background: url("/shelter/src/assets/button_arrow_prev.svg");
+  background: url("../assets/button_arrow_prev.svg");
   width: 52px;
   height: 52px;
   margin-top: 193px;
@@ -277,7 +287,7 @@ button {
   border-radius: 50%;
 }
 .our-friends__next {
-  background: url("/shelter/src/assets/button_arrow_next.svg");
+  background: url("../assets/button_arrow_next.svg");
   width: 52px;
   height: 52px;
   margin-top: 193px;
@@ -339,6 +349,14 @@ button {
   color: #292929;
   cursor: pointer;
   transition: all 0.5s;
+  margin-bottom: 30px;
+  background-color: #F1CDB3;
+  border-radius: 100px;
+  color: #292929;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .our-friends__button-rest:hover {
   transform: rotate(90deg);
@@ -389,7 +407,7 @@ button {
   text-align: center;
   justify-content: center;
   letter-spacing: 0.06em;
-  margin-bottom: 60px;
+  margin-bottom: 62px;
 }
 .help__img {
   width: 60px;
@@ -414,9 +432,10 @@ button {
 }
 
 .in-addition {
-  padding-top: 91px;
-  padding-bottom: 100px;
+  padding-top: 93px;
+  padding-bottom: 75px;
   background-color: #F6F6F6;
+  width: 100%;
 }
 .in-addition .container {
   padding: 0 183px;
@@ -426,6 +445,7 @@ button {
   flex-direction: row;
   justify-content: space-between;
   gap: 30px;
+  margin-bottom: 25px;
 }
 .in-addition__text {
   margin-top: -40px;
@@ -442,7 +462,7 @@ button {
   align-items: center;
   letter-spacing: 0.06em;
   color: #545454;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 .in-addition__bank {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -454,7 +474,7 @@ button {
   align-items: center;
   letter-spacing: 0.06em;
   color: #545454;
-  margin-bottom: 17px;
+  margin-bottom: 19px;
 }
 .in-addition__img {
   width: 505px;
@@ -477,18 +497,25 @@ button {
 }
 
 .footer {
+  max-height: 350px;
+  height: 100%;
+  padding-top: 32px;
   background-image: url("/shelter/src/assets/footer-gradient-background.png");
   background-repeat: no-repeat;
   width: 100%;
   object-position: center;
-  object-fit: cover;
+  object-fit: fill;
   background-size: 100%;
   height: fit-content;
+}
+.footer .container {
+  padding: 0;
 }
 .footer__content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: -5px;
 }
 .footer__contacts {
@@ -505,7 +532,7 @@ button {
   max-width: 280px;
   width: 100%;
   color: #FFF;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 .footer__contacts-mail {
   display: flex;
@@ -517,6 +544,10 @@ button {
 .footer__contacts-mail-icon {
   width: 40px;
   height: 26px;
+  transition: all 0.4s;
+}
+.footer__contacts-mail-icon:hover {
+  transform: scale(1.3);
 }
 .footer__contacts-mail-email {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -526,6 +557,10 @@ button {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+  transition: all 0.4s;
+}
+.footer__contacts-mail-email:hover {
+  transform: scale(1.1);
 }
 .footer__contacts-phone {
   display: flex;
@@ -537,15 +572,21 @@ button {
 .footer__contacts-phone-icon {
   width: 40px;
   height: 32px;
+  transition: all 0.4s;
+}
+.footer__contacts-phone-icon:hover {
+  transform: scale(1.3);
 }
 .footer__contacts-phone-number {
   width: 179px;
   height: 23px;
+  transition: all 0.4s;
+}
+.footer__contacts-phone-number:hover {
+  transform: scale(1.1);
 }
 .footer__img {
-  margin-top: 15px;
-  width: 300px;
-  height: 310px;
+  margin-top: 9px;
 }
 .footer__adresses-first {
   display: flex;
@@ -554,9 +595,17 @@ button {
   cursor: pointer;
   margin-bottom: 37px;
   margin-top: -10px;
+  transition: all 0.4s;
+}
+.footer__adresses-first:hover {
+  transform: scale(1.1);
 }
 .footer__adresses-second {
   margin-top: -10px;
+  transition: all 0.4s;
+}
+.footer__adresses-second:hover {
+  transform: scale(1.1);
 }
 .footer__link {
   font-style: normal;
@@ -569,6 +618,14 @@ button {
   width: 100%;
 }
 
+.header-pets {
+  padding-top: 30px;
+  width: 100%;
+  object-position: center;
+  object-fit: fill;
+  background-size: 100%;
+  width: 100%;
+}
 .header-pets__content {
   display: flex;
   justify-content: space-between;
@@ -593,6 +650,7 @@ button {
   align-items: center;
   letter-spacing: 0.06em;
   color: #545454;
+  margin-bottom: 10px;
 }
 .header-pets__logo-sub {
   font-family: Arial, Helvetica, sans-serif;
@@ -604,6 +662,7 @@ button {
   align-items: center;
   letter-spacing: 0.1em;
   color: #292929;
+  margin-bottom: 30px;
 }
 .header-pets__link {
   font-size: 15px;
@@ -640,15 +699,22 @@ button {
 }
 
 .friends {
+  padding-top: 50px;
   background-color: #F6F6F6;
-  padding-bottom: 100px;
+  padding-bottom: 70px;
+}
+.friends .container {
+  max-width: 1280px;
+  padding: 0 40px;
 }
 .friends__cards {
+  align-self: center;
   display: grid;
   grid-template-columns: repeat(4, 22%);
-  grid-column-gap: 2%;
+  grid-column-gap: 6.6%;
   grid-row-gap: 6%;
-  margin-bottom: 80px;
+  margin-bottom: 130px;
+  transform: translateX(-58px);
 }
 .friends__content {
   display: flex;
@@ -672,24 +738,20 @@ button {
   display: flex;
 }
 .friends__prev {
-  background: url("/shelter/src/assets/button_paginator-prev.svg");
+  background: url("../assets/button_paginator-prev.svg");
   width: 52px;
   height: 52px;
   cursor: pointer;
   transition: all 0.5s;
-}
-.friends__prev:hover {
-  transform: rotate(90deg);
-  transform: scale(1.2);
-  background-color: rgb(220, 153, 20);
-  border-radius: 50%;
+  transform: translateY(-13px);
 }
 .friends__next {
-  background: url("/shelter/src/assets/button_paginator-next.svg");
+  background: url("../assets/button_paginator-next.svg");
   width: 52px;
   height: 52px;
   cursor: pointer;
   transition: all 0.5s;
+  transform: translateY(-13px);
 }
 .friends__next:hover {
   transform: rotate(90deg);
@@ -707,6 +769,7 @@ button {
   transition: all 0.5s;
   border-radius: 9px;
   cursor: pointer;
+  margin-bottom: -20px;
 }
 .friends__card:hover {
   transform: scale(1.15);
@@ -720,8 +783,8 @@ button {
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
-  width: 180px;
-  height: 42px;
+  width: 187px;
+  height: 52px;
   border-radius: 100px;
   background-color: #FAFAFA;
   border: 2px solid #eec7aa;
@@ -733,8 +796,6 @@ button {
 }
 .friends__button-rest {
   cursor: pointer;
-  width: 52px;
-  height: 52px;
   border: none;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
@@ -743,8 +804,11 @@ button {
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
-  cursor: pointer;
   transition: all 0.5s;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
 }
 .friends__button-rest:hover {
   transform: rotate(90deg);
@@ -757,9 +821,36 @@ button {
   justify-content: center;
   gap: 20px;
 }
+.friends__button-paginator {
+  transform: translateY(-12px);
+}
+.friends__button-paginator-then {
+  transition: all 0.5s;
+  transform: translateY(-12px);
+}
+.friends__button-paginator-then:hover {
+  transform: rotate(90deg);
+  transform: scale(1.2);
+  background-color: rgb(220, 153, 20);
+  border-radius: 50%;
+}
 .friends__button-paginator-early {
   width: 52px;
   height: 52px;
+}
+.friends__name {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-top: 28px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

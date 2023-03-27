@@ -1,5 +1,5 @@
 .our-friends {
-  padding-top: 21px;
+  padding-top: 51px;
   background-color: #F6F6F6;
   padding-bottom: 70px;
   margin-bottom: 77px;
@@ -24,6 +24,8 @@ margin-bottom: 60px;
 }
 &__slider {
   display: flex;
+  //max-width: 990px;
+  //width: 100%;
   transform: translateX(-25px);
   
 }
@@ -36,7 +38,7 @@ margin-bottom: 60px;
 
 }
 &__prev {
- background: url('/shelter/src/assets/button_arrow_prev.svg');
+ //background: url('../assets/button_arrow_prev.svg');
  width: 52px;
  height: 52px;
  margin-top: 193px;
@@ -51,7 +53,7 @@ margin-bottom: 60px;
  }
 }
 &__next {
-  background: url('/shelter/src/assets/button_arrow_next.svg');
+  //background: url('../assets/button_arrow_next.svg');
  width: 52px;
  height: 52px;
  margin-top: 193px;
@@ -113,6 +115,15 @@ letter-spacing: 0.06em;
 color: #292929;
 cursor: pointer;
 transition: all .5s;
+margin-bottom: 30px;
+
+background-color: #F1CDB3;
+border-radius: 100px;
+color: #292929;
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
  &:hover {
   transform: rotate(90deg);
   transform: scale(1.1);

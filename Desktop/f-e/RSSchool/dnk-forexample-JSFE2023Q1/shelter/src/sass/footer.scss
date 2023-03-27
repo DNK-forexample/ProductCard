@@ -1,16 +1,24 @@
 .footer {
-  background-image: url('/shelter/src/assets/footer-gradient-background.png');
+  background-image: url('../assets/footer-gradient-background.png');
+//margin-top: 26px;
+max-height: 350px;
+height: 100%;
+padding-top: 32px;
+ //background-image: url('/shelter/src/assets/footer-gradient-background.png');
   background-repeat: no-repeat;
   width: 100%;
   object-position: center;
-  object-fit: cover;
+  object-fit:fill;
   background-size: 100%;
   height: fit-content;
+  & .container {
+    padding: 0;
+  }
   &__content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  
+  flex-wrap: wrap;
     margin-top: -5px;
     //column-gap: 160px;
   }
@@ -28,7 +36,7 @@ letter-spacing: 0.06em;
 max-width: 280px;
 width: 100%;
 color: #FFF;
-margin-bottom: 40px;
+margin-bottom: 45px;
     }
     &-mail {
       display: flex;
@@ -39,6 +47,10 @@ margin-bottom: 40px;
       &-icon {
         width: 40px;
         height: 26px;
+        transition: all .4s;
+        &:hover {
+          transform: scale(1.3);
+        }
       }
       &-email {
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -49,7 +61,10 @@ line-height: 115%;
 letter-spacing: 0.06em;
 
 color: #F1CDB3;
-
+transition: all .4s;
+&:hover {
+  transform: scale(1.1);
+}
       }
     }
     &-phone {
@@ -61,18 +76,27 @@ color: #F1CDB3;
       &-icon {
         width: 40px;
         height: 32px;
+        transition: all .4s;
+        &:hover {
+          transform: scale(1.3);
+        }
       }
       &-number {
         width: 179px;
         height: 23px;
+        transition: all .4s;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }
 
   &__img {
-    margin-top: 15px;
-    width: 300px;
-    height: 310px;
+    margin-top: 9px;
+    //width: 300px;
+    //height: 310px;
+    
   }
   &__adresses {
     &-first {
@@ -82,9 +106,17 @@ color: #F1CDB3;
       cursor: pointer;
       margin-bottom: 37px;
       margin-top: -10px;
+      transition: all .4s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
     &-second {
       margin-top: -10px;
+      transition: all .4s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
   &__link {

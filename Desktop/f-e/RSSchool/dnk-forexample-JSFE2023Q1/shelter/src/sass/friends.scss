@@ -1,16 +1,21 @@
 .friends {
-  background-color: #F6F6F6;
-  padding-bottom: 100px;
-  
-  &__pet {
 
-  }
+  padding-top: 50px;
+  background-color: #F6F6F6;
+  padding-bottom: 70px;
+  
+ & .container {
+  max-width: 1280px;
+  padding: 0 40px;
+ }
   &__cards {
+    align-self: center;
     display: grid;
     grid-template-columns: repeat(4, 22%);
-    grid-column-gap: 2%;
+    grid-column-gap: 6.6%;
     grid-row-gap: 6%;
-    margin-bottom: 80px;
+    margin-bottom: 130px;
+    transform: translateX(-58px);
   }
   &__content {
     display: flex;
@@ -33,29 +38,26 @@ margin-bottom: 60px;
 }
 &__slider {
   display: flex;
-  
+ 
 }
 &__prev {
- background: url('/shelter/src/assets/button_paginator-prev.svg');
+ //background: url('../assets/button_paginator-prev.svg');
  width: 52px;
  height: 52px;
 
  cursor: pointer;
  transition: all .5s;
- &:hover {
-  transform: rotate(90deg);
-  transform: scale(1.2);
-  background-color: rgb(220, 153, 20);
- border-radius: 50%;
- }
+ transform: translateY(-13px);
 }
 &__next {
-  background: url('/shelter/src/assets/button_paginator-next.svg');
+  //background: url('../assets/button_paginator-next.svg');
+  //background-image: url('/shelter/src/assets/button_paginator-next.svg');
  width: 52px;
  height: 52px;
 
 cursor: pointer;
 transition: all .5s;
+transform: translateY(-13px);
  &:hover {
   transform: rotate(90deg);
   transform: scale(1.2);
@@ -73,6 +75,7 @@ align-items: center;
 transition: all .5s;
 border-radius: 9px;
 cursor: pointer;
+margin-bottom: -20px;
 &:hover {
   transform: scale(1.15);
 }
@@ -86,31 +89,36 @@ font-size: 17px;
 line-height: 130%;
 letter-spacing: 0.06em;
 color: #292929;
-width: 180px;
-height: 42px;
+width: 187px;
+height: 52px;
 border-radius: 100px;
 background-color: #FAFAFA;
 border: 2px solid #eec7aa;
+
 transition: all .7s;
  &:hover {
   transform: rotate(360deg);
   background-color: rgb(220, 153, 20);
 
  }
+
 &-rest {
-  cursor: pointer;
-  width: 52px;
-  height: 52px;
-  border: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+cursor: pointer;
+
+border: none;
+font-family: Georgia, 'Times New Roman', Times, serif;
 font-style: normal;
 font-weight: 400;
 font-size: 17px;
 line-height: 130%;
 letter-spacing: 0.06em;
 color: #292929;
-cursor: pointer;
+
 transition: all .5s;
+margin-bottom: 30px;
+border-radius: 50%;
+width: 52px;
+height: 52px;
  &:hover {
   transform: rotate(90deg);
   transform: scale(1.1);
@@ -126,9 +134,34 @@ transition: all .5s;
   gap: 20px;
 }
 &__button-paginator {
+  transform: translateY(-12px);
+  &-then {
+    transition: all .5s;
+    transform: translateY(-12px);
+     &:hover {
+      transform: rotate(90deg);
+      transform: scale(1.2);
+      background-color: rgb(220, 153, 20);
+     border-radius: 50%;
+     }
+  }
   &-early {
     width: 52px;
     height: 52px;
   }
 }
+&__name {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-top: 28px;
+  margin-bottom: 30px;
+ }
 }

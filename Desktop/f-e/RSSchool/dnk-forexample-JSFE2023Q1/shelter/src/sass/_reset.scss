@@ -2,8 +2,12 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 body {
+  scroll-behavior: smooth;
+  height: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
